@@ -1,2 +1,2 @@
 #!/bin/bash
-cpp $CFILE -o $CFILE|tr "c" "o"
+cpp $CFILE -o "${CFILE%.c}.o"
