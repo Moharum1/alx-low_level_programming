@@ -7,7 +7,7 @@
 int main(void)
 {
 int n;
-n = scanf("%d", &n);
+scanf("%d", &n);
 if (n > 0)
 {
 printf("%d is postive", n);
@@ -20,5 +20,6 @@ else
 {
 printf("%d is zero", n);
 }
+return (0);
 }
 
