@@ -26,6 +26,6 @@ putchar(',');
 }
 i++;
 }
-putchat('\n');
+putchar('\n');
 return (0);
 }
