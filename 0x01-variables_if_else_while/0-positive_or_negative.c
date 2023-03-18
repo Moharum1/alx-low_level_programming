@@ -6,19 +6,19 @@
  */
 int main(void)
 {
-int n;
-scanf("%d", &n);
-if (n > 0)
+int num;
+scanf("%d", &num);
+
+if (num > 0) {
+        printf("%d is greater than zero\n", num);
+} 
+else if (num < 0) 
 {
-printf("%d is postive", n);
-}
-else if (n < 0)
-{
-printf("%d is negative", n);
-}
+        printf("%d is less than zero\n", num);
+} 
 else
 {
-printf("%d is zero", n);
+printf("%d is equal to zero\n", num);
 }
 return (0);
 }
