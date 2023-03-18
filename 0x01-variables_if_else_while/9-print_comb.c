@@ -11,8 +11,13 @@ while (i < 10)
 {
 putchar(i + '0');
 putchar(' ');
+if (i == 9)
+{
+}
+else
+{
 putchar(',');
-putchar(' ');
+}
 i++;
 }
 return (0);
