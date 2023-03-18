@@ -14,7 +14,6 @@ while (j < 10)
 {
 putchar(i + '0');
 putchar(j + '0');
-}
 j++;
 }
 i++;
