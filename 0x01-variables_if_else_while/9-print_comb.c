@@ -13,17 +13,7 @@ int j = 0;
 while (j < 10) 
 {
 putchar(i + '0');
-putchar(',');
-putchar(' ');
 putchar(j + '0');
-if (j == 9 && i == 9) 
-{
-putchar('\n');
-} 
-else 
-{
-putchar(',');
-putchar(' ');
 }
 j++;
 }
