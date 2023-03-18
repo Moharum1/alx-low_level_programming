@@ -12,6 +12,7 @@ while (ch <= '9')
 putchar(ch);
 ch++;
 }
+ch = 'a';
 while (ch <= 'f')
 {
 putchar(ch);
