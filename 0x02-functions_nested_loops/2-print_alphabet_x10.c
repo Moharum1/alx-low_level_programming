@@ -1,7 +1,7 @@
 #include"main.h"
 #include<stdio.h>
 /**
- * print_alphabet - Entry point
+ * print_alphabet_x10 - print all the alphabet 10 times
  *
  * Return : All the alphabets
  */
