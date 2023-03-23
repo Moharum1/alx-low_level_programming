@@ -13,7 +13,12 @@ void jack_bauer(void)
     {
         while(j <= 60)
         {
-            printf("%d : %d\n" , i , j);
+		_putchar((h / 10) + '0');
+		_putchar((h % 10) + '0');
+		_putchar(':');
+		_putchar((m / 10) + '0');
+		_putchar((m % 10) + '0');
+		_putchar('\n');
         }
     }
 }
