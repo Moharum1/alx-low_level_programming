@@ -3,7 +3,7 @@
 /**
  * times_table - a function that print every minuite in day
  * it takes nothing
- * Return: 0 
+ * Return: 0
  */
 void times_table(void)
 {
