@@ -5,7 +5,7 @@
  * @c: A Number
  * Return: if 1 if yes and 0 otherwise
  */
-int _isupper(int c)
+int _isdigit(int c)
 {
 	if (c >= 1 && c <= 9')
 	{
