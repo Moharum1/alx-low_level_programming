@@ -7,8 +7,12 @@
  */
 int _islower(int c)
 {
-	int x;
-
-	x = islower(c);
-	return (x);
+	if (c >= 'a' && c <= 'z')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
