@@ -4,16 +4,7 @@
  *
  * Return : All the alphabets
  */
-void print_alphabet(void)
-{
-char start = 'a';
-while (start <= 'z')
-{
-putchar(start);
-start++;
-}
-putchar('\n');
-}
+void print_alphabet(void);
 /**
  * main - Entry point
  *
@@ -23,4 +14,14 @@ int main(void)
 {
 print_alphabet();
 return (0);
+}
+void print_alphabet(void)
+{
+char start = 'a';
+while (start <= 'z')
+{
+putchar(start);
+start++;
+}
+putchar('\n');
 }
