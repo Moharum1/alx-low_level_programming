@@ -10,15 +10,16 @@ void puts2(char *str)
 {
 	int l;
 	int i = 0;
+
 	l = strlen(str);
-	
-	while ( i < l)
+	while (i < l)
 	{
 		if (i % 2 == 0)
 		{
-			printf("%c",*str);
+			printf("%c", *str);
 		}
 		str++;
 		i++;
 	}
+	printf("\n");
 }
