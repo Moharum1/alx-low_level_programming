@@ -14,11 +14,10 @@ while (*str != '\0')
 str++;
 len++;
 }
-while ( i <= len)
+while (i <= len)
 {
 i++;
-str-- ;
+str--;
 printf("%c", *str);
-} 
-printf("\n");
+}
 }
