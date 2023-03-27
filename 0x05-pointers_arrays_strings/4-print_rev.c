@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _puts - Print a String of Characters
+ * print_rev - Print a String of Characters in reverse oreder
  * @str : String we want to print
  * Return: None
  */
-void _puts(char *str)
+void print_rev(char *str)
 {
 int len = 0;
 int i = 0;
