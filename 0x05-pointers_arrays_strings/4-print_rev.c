@@ -11,11 +11,12 @@ int len = 0;
 int i = 0;
 while (*str != '\0')
 {
-	str++;
-        len++;
+str++;
+len++;
 }
 while ( i <= len)
 {
+i++;
 str-- ;
 printf("%c", *str);
 } 
