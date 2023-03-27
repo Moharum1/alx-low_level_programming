@@ -14,7 +14,7 @@ l = strlen(str);
 begin_ptr = str;
 end_ptr = str + l - 1;
 
-while (i < (l - 1) / 2) 
+while (i < (l - 1) / 2)
 {
 i++;
 ch = *end_ptr;
