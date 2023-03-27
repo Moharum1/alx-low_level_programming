@@ -8,12 +8,13 @@
 void _puts(char *str)
 {
 int len = 0;
+int i = 0;
 while (*str != '\0')
 {
 	str++;
         len++;
 }
-for (int i=0 ; i < len ; i++)
+while ( i <= len)
 {
 str-- ;
 printf("%c", *str);
