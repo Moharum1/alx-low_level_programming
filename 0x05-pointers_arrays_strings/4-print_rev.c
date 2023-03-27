@@ -20,5 +20,5 @@ i++;
 str--;
 printf("%c", *str);
 }
-priintf("\n");
+printf("\n");
 }
