@@ -12,21 +12,21 @@ void puts_half(char *str)
 	int i = 0;
 
 	l = strlen(str);
-	while (i < l/2)
+	while (i < l / 2)
 	{
-		if (l%2 == 0)
+		if (l % 2 == 0)
 		{
-			str = str + l/2 + i;
+			str = str + l / 2 + i;
 			printf("%c", *str);
-			str = str - l/2 - i;
+			str = str - l / 2 - i;
 			i++;  
 		} 
 		else
 		{
-			str = str + (l-1)/2 + i;
+			str = str + (l - 1) / 2 + i;
 			printf("%c", *str);
-			str = str - (l-1)/2 - i;
-			i++;  
+			str = str - (l - 1) / 2 - i;
+			i++;
 		}
 	}
 	printf("\n");
