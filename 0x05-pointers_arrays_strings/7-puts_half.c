@@ -19,8 +19,8 @@ void puts_half(char *str)
 			str = str + l / 2 + i;
 			printf("%c", *str);
 			str = str - l / 2 - i;
-			i++;  
-		} 
+			i++: 
+		}
 		else
 		{
 			str = str + (l - 1) / 2 + i;
