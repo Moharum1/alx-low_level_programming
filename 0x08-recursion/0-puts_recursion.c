@@ -6,7 +6,7 @@
  * @s : the array we will print
  * Return: nothing
  */
-char _puts_recursion(char *s)
+void _puts_recursion(char *s)
 {
 	printf("%c",*s);
 	s++;
