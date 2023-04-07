@@ -3,11 +3,13 @@
 #include "main.h"
 
 /**
- * *sqrt_recursion - return the square root of a number
+ * *sqrt_recursive - return the square root of a number
  * @n : the number
+ * @x : the comparator
+ * @e : accuraccy
  * Return: sqrt(x)
  */
-double sqrt_recursive(double n, double x, double e) 
+double sqrt_recursive(double n, double x, double e)
 {
 	double root = (x + n / x) / 2;
 
