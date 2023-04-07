@@ -10,7 +10,6 @@ int is_prime_number(int n)
 {
 	return check_is_prime(n,2);
 }
-int check_is_prime(int n , int other);
 
 /**
  * *check_is_prime - check the condition of the prime
