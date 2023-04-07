@@ -17,18 +17,18 @@ int is_prime_number(int n)
  * @other : the comparator
  * Return: boolean indicator
  */
-int check_is_prime(int n , int other)
+int check_is_prime(int n, int other)
 {
 	if (other >= 2 && n > 1)
 	{
 		return (1);
 	}
-	else if (n % other ==  0 || n <= 1 )
+	else if (n % other ==  0 || n <= 1)
 	{
 		return (0);
 	}
 	else
 	{
-		return check_is_prime(n,other+1);
+		return (check_is_prime(n, other + 1));
 	}
 }
