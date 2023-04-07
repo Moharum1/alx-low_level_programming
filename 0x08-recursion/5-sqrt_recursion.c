@@ -1,20 +1,24 @@
 #include <stdio.h>
 #include <string.h>
 #include "main.h"
+
+double sqrt_recursive(double n, double x, double e) {
+	double root = (x + n / x) / 2;
+	if (x - root < e) 
+	{
+		return root;
+	}
+	return sqrt_recursive(n, root, e);
+}
+
 /**
  * *_sqrt_recursion - return the square root of a number
  * @n : the number
- * Return: sqrt(n)
+ * Return: sqrt(x)
  */
-int _sqrt_recursion(int n)
+ int _sqrt_recursion(int n)
 {
 	double x = n;
-	double y = 1;
 	double e = 0.000001;
-	while (x - y > e) 
-	{
-		x = (x + y) / 2;
-		y = n / x;
-	}
-	return (x);
+	return sqrt_recursive(n, x, e);
 }
