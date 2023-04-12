@@ -11,6 +11,12 @@
  */
 char *_strdup(char *str)
 {
+    if (str == NULL)
+    {
+        return (NULL);
+    }
+    else
+    {
 	char *ar;
 	int len;
 	int i;
@@ -26,4 +32,5 @@ char *_strdup(char *str)
 	}
 
 	return (ar);
+    }
 }
