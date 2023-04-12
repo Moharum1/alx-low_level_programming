@@ -17,7 +17,7 @@ char *argstostr(int ac, char **av)
     }
     else
     {
-        char *ar;
+        char **ar;
         int i;
         int j;
         int z;
@@ -44,6 +44,6 @@ char *argstostr(int ac, char **av)
             i++;
         }
 
-        return (ar);
+        return (**ar);
     }
 }
