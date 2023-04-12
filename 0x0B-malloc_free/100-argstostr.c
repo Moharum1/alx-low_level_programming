@@ -17,7 +17,7 @@ char *argstostr(int ac, char **av)
     }
     else
     {
-        char **ar;
+        char *ar;
         int i;
         int j;
         int len;
