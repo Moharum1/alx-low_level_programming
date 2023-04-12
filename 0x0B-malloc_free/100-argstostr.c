@@ -19,16 +19,13 @@ char *argstostr(int ac, char **av)
     {
         char *ar;
         int i;
-        int j;
-        int len;
 
         ar = malloc(sizeof(char) * ac);
         i = 0;
-        len = strlen(av[i])*2;
         
         while (i < ac)
         {
-            ar[i] = av[i];
+            ar[i] = *av[i];
             i++;
             ar[i] = '\n';
             i++;
