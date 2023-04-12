@@ -17,24 +17,20 @@ char *argstostr(int ac, char **av)
     }
     else
     {
-        char *ar;
+        char **ar;
         int i;
         int j;
         int len;
 
         ar = malloc(sizeof(char) * ac);
         i = 0;
-        len = strlen(av[i]);
+        len = strlen(av[i])*2;
         
         while (i < ac)
         {
-            j = 0;
-            while (j < len)
-            {
-                ar[i] = av[i][j];
-                j++;
-            }
-            ar[i+1] = '\n';
+            ar[i] = av[i];
+            i++;
+            ar[i] = '\n';
             i++;
         }
 
