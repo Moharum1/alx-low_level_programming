@@ -19,6 +19,14 @@ char *str_concat(char *s1, char *s2)
 		ar[0] = '\0';
 		return (ar);
 	}
+	else if (s1 == NULL)
+	{
+		CheckS1(s1);
+	}
+	else if (s2 == NULL)
+	{
+		CheckS2(s2);
+	}
 	else
 	{
 		char *ar;
@@ -51,4 +59,43 @@ char *str_concat(char *s1, char *s2)
 	}
 }
 
+void CheckS1(char s1)
+{
+                char *ar;
+                int len2;
+                int i;
 
+                len2 = strlen(s2);
+                ar = malloc(sizeof(char) * len2);
+                i = 0;
+
+                while (i < len2)
+                {
+                        ar[i] = s2[i];
+                        i++;
+                }
+                ar[i+1] = '\0';
+
+                return (ar);
+}
+
+void CheckS2(char s2)
+{
+                char *ar;
+                int len2;
+                int i;
+
+                len2 = strlen(s2);
+                ar = malloc(sizeof(char) * len2);
+                i = 0;
+
+                while (i < len2)
+                {
+                        ar[i] = s2[i];
+                        i++;
+                }
+                ar[i+1] = '\0';
+
+                return (ar);
+
+}
