@@ -38,6 +38,6 @@ char *argstostr(int ac, char **av)
             i++;
         }
 
-        
+        return (ar);
     }
 }
