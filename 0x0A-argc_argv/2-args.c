@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - Prints the name of the program
+ * main - Prints all the gien arguments
  * @argc: Number of command line arguments
  * @argv: Array name
  * Return: 0
@@ -9,7 +9,12 @@
 
 int main(int argc, char *argv[])
 {
-	printf("%s\n", argv[argc * 0]);
+	int count = 1;
 
+	while (count < argc)
+	{
+		printf("%s\n", argv[count]);
+		count++;
+	}
 	return (0);
 }
