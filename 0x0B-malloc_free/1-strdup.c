@@ -11,26 +11,26 @@
  */
 char *_strdup(char *str)
 {
-    if (str == NULL)
-    {
-        return (NULL);
-    }
-    else
-    {
-	char *ar;
-	int len;
-	int i;
-
-	len = strlen(str);
-	ar = malloc(sizeof(char) * len);
-	i = 0;
-
-	while (i <= len)
+	if (str == NULL)
 	{
-		ar[i] = str[i];
-		i++;
+		return (NULL);
 	}
+	else
+	{
+		char *ar;
+		int len;
+		int i;
 
-	return (ar);
-    }
+		len = strlen(str);
+		ar = malloc(sizeof(char) * len);
+		i = 0;
+
+		while (i <= len)
+		{
+			ar[i] = str[i];
+			i++;
+		}
+
+		return (ar);
+    	}
 }
