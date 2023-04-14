@@ -1,18 +1,17 @@
 #include "main.h"
 #include <stdlib.h>
-/* malloc_checked - allocate memory using malloc
-*@b: size of the allocated space
-*return : pointer
-*/
+
+/**
+ * malloc_checked - Main Entry
+ * @b: input
+ * Return: 0
+ */
 void *malloc_checked(unsigned int b)
 {
-	void *ptr;
+	void *p;
 
-	ptr = malloc(b);
-
-	if (ptr == 0)
-	{
-		exit (98);
-	}
-	return (ptr);
+	p = malloc(b);
+	if (p == NULL)
+		exit(98);
+	return (p);
 }
