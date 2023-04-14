@@ -1,50 +1,41 @@
-#include <string.h>
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
+
 /**
-  * string_nconcat - Concat two string into one
-  * @s1: 1st string
-  * @s2: 2nd string
-  * @n: number of contnet of second string
-  *
-  * Return: concated string
-  */
+ * string_nconcat - Main Entry
+ * @s1: input
+ * @s2: input
+ * @n: input
+ * Return: 0
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *p;
-	int i;
-	int l;
-	int m;
+	unsigned int i, j, k;
+	char *s;
 
-	p = malloc(sizeof(char) * (*s1 + n));
-	i = strlen(s1);
-	l = 0;
-	m = 0;
-
-	if (p == NULL)
-	{
-		return (NULL);
-	}
 	if (s1 == NULL)
+		i = 0;
+	else
 	{
-		s1 = "";
+		for (i = 0; s1[i]; i++)
+			;
 	}
 	if (s2 == NULL)
+		j = 0;
+	else
 	{
-		s2 = "";
+		for (j = 0; s2[j]; j++)
+			;
 	}
-
-	while (l < i)
-	{
-		p[l] = s1[l];
-		l++;
-	}
-
-	while (m <= (int) n)
-	{
-		p[l+m] = s2[m];
-		m++;
-	}
-
-	return (p);
+	if (j > n)
+		j = n;
+	s = malloc(sizeof(char) * (i + j + 1));
+	if (s == NULL)
+		return (NULL);
+	for (k = 0; k < i; k++)
+		s[k] = s1[k];
+	for (k = 0; k < j; k++)
+		s[k + i] = s2[k];
+	s[i + j] = '\0';
+	return (s);
 }
