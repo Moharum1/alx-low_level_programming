@@ -2,7 +2,8 @@
 #include "dog.h"
 
 /**
- * print_dog - function with 1 arg.
+ * print_dog - function with 1 arg
+ * @d : the struct varaible
  * Description: print the struct variable
  * Return: na
  */
@@ -10,9 +11,9 @@ void print_dog(struct dog *d)
 {
 	if (d != NULL)
 	{
-		if (d -> name != NULL)
+		if (d->name != NULL)
 		{
-			printf("Name: %s\n", d -> name);
+			printf("Name: %s\n", d->name);
 		}
 		else
 		{
@@ -20,11 +21,11 @@ void print_dog(struct dog *d)
 
 		}
 
-		printf("Age: %f\n", d -> age);
+		printf("Age: %f\n", d->age);
 
-		if (d -> owner != NULL)
+		if (d->owner != NULL)
 		{
-			printf("Owner: %s\n", d -> owner);
+			printf("Owner: %s\n", d->owner);
 		}
 		else
 		{
