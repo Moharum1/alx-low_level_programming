@@ -3,14 +3,13 @@
 #include <stdlib.h>
 
 /**
- * init_dog - function with 4 arguments
- * @d: structure pointer
- * @name: pointer character
- * @age: float type argument
- * @owner: pointer type character
+ * new_dog - function with 3 arguments
+ * @name: char type pointer
+ * @age: float type
+ * @owner: char type pointer
  *
- * Description: initialize a variable of type
- * Return: na
+ * Description: creates a new dog
+ * Return: NULL if fail or pointer
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -24,6 +23,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (Mydog)
 		return (Mydog);
-	else 
+	else
 		return	(NULL);
 }
