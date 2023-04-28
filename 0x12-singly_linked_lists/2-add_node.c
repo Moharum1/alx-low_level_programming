@@ -1,10 +1,11 @@
 #include "lists.h"
 
 /**
- * list_len - count the number of elements in a list.
- * @h: header of the linked list;
+ * add_node - add a node to the list.
+ * @head: header of the linked list;
+ * @str : the content of the str;
  *
- * Return: number of nodes of the list.
+ * Return: address of the created node.
  */
 list_t *add_node(list_t **head, const char *str)
 {
