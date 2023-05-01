@@ -1,29 +1,25 @@
 #include <stdio.h>
 #include "lists.h"
 
-
 /**
- * add_nodeint_end - add a new element to the list but in reverse.
- * @head: header of the linked list;
- * @n: The number we want to add to the linked list
+ *pop_listint - deletes the head node of a linked list
+ *@head: head of the list
  *
- * Return: Address of linked list
+ *Return: the deleted node data
  */
+
 int pop_listint(listint_t **head)
 {
-
-	listint_t *Temp;
+	listint_t *popped;
 	int content;
 
 	if (*head == NULL)
 		return (0);
 
-
-	Temp = *head;
-	content = Temp->n;
-	free(*head);
+	popped = *head;
+	content = popped->n;
+	free(popped);
 
 	*head = (*head)->next;
-
-	return(content);
+	return (content);
 }
