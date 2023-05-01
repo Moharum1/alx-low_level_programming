@@ -3,7 +3,7 @@
 
 
 /**
- * print_listint - print all the content of a linked list.
+ * listint_len - print all the content of a linked list.
  * @h: header of the linked list;
  *
  * Return: number of nodes of the list.
