@@ -3,11 +3,10 @@
 
 
 /**
- * get_nodeint_at_index - get the list elemnt at a given index.
+ * sum_listint - get the list elemnt at a given index.
  * @head: header of the linked list;
- * @index: The number of the linked list we want
  *
- * Return: Address of linked list
+ * Return: Sum of Content of list
  */
 int sum_listint(listint_t *head)
 {
@@ -19,7 +18,6 @@ int sum_listint(listint_t *head)
 
 	if (Main == NULL)
 		return (0);
-		
 
 	while (Main)
 	{
