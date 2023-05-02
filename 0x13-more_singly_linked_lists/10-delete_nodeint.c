@@ -5,7 +5,7 @@
 /**
  * delete_nodeint_at_index - add the list elemnt at a given index.
  * @head: header of the linked list;
- * @idx: The number of the linked list we want
+ * @index: The number of the linked list we want
  *
  * Return: Address of linked list
  */
@@ -40,7 +40,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 		if (Main->next)
 			afterf = Main->next;
-		else 
+		else
 			afterf = NULL;
 
 		beforef->next = afterf;
