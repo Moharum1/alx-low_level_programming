@@ -3,9 +3,9 @@
 
 
 /**
- * add_nodeint_end - add a new element to the list but in reverse.
+ * get_nodeint_at_index - get the list elemnt at a given index.
  * @head: header of the linked list;
- * @n: The number we want to add to the linked list
+ * @index: The number of the linked list we want
  *
  * Return: Address of linked list
  */
@@ -24,7 +24,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 			Main = Main->next;
 			Counter++;
 		}
-		else 
+		else
 			return (NULL);
 	}
 
