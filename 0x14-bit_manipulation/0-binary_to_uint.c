@@ -1,5 +1,6 @@
 #include <string.h>
 #include <math.h>
+#include "main.h"
 
 /**
  * power - return the power of a number
