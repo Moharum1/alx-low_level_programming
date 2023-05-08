@@ -11,8 +11,8 @@
   */
 int create_file(const char *filename, char *text_content)
 {
-	ssize_t fp;
-	ssize_t w;
+	int fp;
+	int w;
 	int len;
 
 	if (filename == NULL)
@@ -21,10 +21,6 @@ int create_file(const char *filename, char *text_content)
 	len = strlen(text_content);
 
 	fp = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	
-	if (!fp)
-		return (0);
-
 	w = write(STDOUT_FILENO, text_content, len);
 	
 	if (fp == -1 || w == -1)
