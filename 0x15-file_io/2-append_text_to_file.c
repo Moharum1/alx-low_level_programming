@@ -9,7 +9,7 @@
   * Return: if file name is NULL or cant be create even witten - -1
   *         Otherwise - 1 on success.
   */
-int create_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
 	int fp;
 	int w;
