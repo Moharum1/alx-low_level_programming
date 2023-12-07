@@ -17,7 +17,6 @@ int sum_dlistint(dlistint_t *head)
 	while (current != NULL)
 	{
 		sum += current->n;
-		printf("%i\n", current->n);
 		current = current->next;
 	}
 
