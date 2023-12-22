@@ -1,7 +1,6 @@
 #ifndef __MAIN__
 #define __MAIN__
 
-#include <string.h>
 #include <stdlib.h>
 
 /**
