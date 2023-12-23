@@ -1,4 +1,10 @@
 #include "hash_tables.h"
+/**
+ * hash_table_delete - Delete the hash table.
+ * @ht: Hash table.
+ *
+ * Return: Void.
+ */
 void hash_table_delete(hash_table_t *ht)
 {
 	hash_node_t *currentNode, *tempNode;
