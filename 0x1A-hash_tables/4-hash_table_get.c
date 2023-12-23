@@ -18,6 +18,11 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	pos = key_index((const unsigned char *)key, ht->size);
 	content = ht->array[pos];
 
+	while (content != NULL && strcmp(content->key, key) != 0)
+	{
+		content = content->next
+	}
+
 	if (content == NULL)
 		return (NULL);
 
