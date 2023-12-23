@@ -20,7 +20,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	while (content != NULL && strcmp(content->key, key) != 0)
 	{
-		content = content->next
+		content = content->next;
 	}
 
 	if (content == NULL)
